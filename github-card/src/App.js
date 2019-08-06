@@ -14,11 +14,9 @@ class App extends React.Component {
 
   componentDidMount(){
     this.fetchData();
-  }
-
-  componentDidUpdate(){
     this.fetchFollowers();
   }
+
 
   fetchData = () => {
     fetch("https://api.github.com/users/coryhedeen")
